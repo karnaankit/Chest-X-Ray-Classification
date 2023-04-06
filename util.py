@@ -83,7 +83,7 @@ def compute_gradcam(model, img, image_dir, df, labels, selected_labels,
             plt.imshow(gradcam, cmap='jet', alpha=min(0.5, predictions[0][i]))
             j += 1
     
-    plt.savefig('output_image' + str(run_number) + '.png', bbox_inches='tight')
+    plt.savefig('output_image' + '.png', bbox_inches='tight')
 
 def get_roc_curve(labels, predicted_vals, generator):
     auc_roc_vals = []
