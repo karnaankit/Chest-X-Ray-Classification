@@ -8,6 +8,7 @@ from tensorflow.keras.layers import AvgPool2D, GlobalAveragePooling2D, MaxPool2D
 from tensorflow.keras.models import Model
 import util
 import streamlit as st
+
 labels = ['Cardiomegaly',
           'Emphysema',
           'Effusion',
@@ -90,11 +91,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-# labels_to_show = labels[:4]
-# util.compute_gradcam(model, '00000284_005.png', IMAGE_DIR, df, labels, labels_to_show)
-# labels_to_show =labels[4:8]
-# util.compute_gradcam(model, '00000284_005.png', IMAGE_DIR, df, labels, labels_to_show)
-# labels_to_show =labels[8:12]
-# util.compute_gradcam(model, '00000284_005.png', IMAGE_DIR, df, labels, labels_to_show)
-# labels_to_show =labels[12:]
-# util.compute_gradcam(model, '00000284_005.png', IMAGE_DIR, df, labels, labels_to_show)
